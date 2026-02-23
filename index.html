@@ -1,9 +1,108 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Štikić - Najbolji nastavnik fizičkog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('nikola_1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <!-- Header / Hero Section -->
+    <header class="relative h-screen flex items-center justify-center text-center text-white hero-gradient">
+        <div class="px-4">
+            <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">
+                Nikola Štikić
+            </h1>
+            <p class="text-xl md:text-2xl font-light italic">
+                Najbolji nastavnik fizičkog u Batajnici
+            </p>
+            <div class="mt-8">
+                <span class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold text-lg shadow-lg">
+                    TOP #1 NASTAVNIK
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- O Nikoli -->
+    <section class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 border-b-4 border-yellow-400 inline-block">O Legendi</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Kada se u Batajnici spomene sport, fer-plej i vrhunska motivacija, prvo ime koje svima padne na pamet je <strong>Nikola Štikić</strong>. 
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Nije samo nastavnik, već i mentor koji svakom učeniku pristupa sa poštovanjem. Njegovi časovi nisu samo trčanje i lopta – to su lekcije o disciplini, zdravom životu i tome kako postati bolji čovek.
+                </p>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
+                <img src="nikola_2.jpg" alt="Nikola Štikić u akciji" onerror="this.src='https://via.placeholder.com/600x400?text=Slika+Nikole+(nikola_2.jpg)'" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Zašto je najbolji -->
+    <section class="bg-blue-900 py-20 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-16 uppercase italic">Zašto je Nikola Top 1?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <!-- Razlog 1 -->
+                <div class="bg-blue-800 p-8 rounded-xl shadow-lg border-b-4 border-yellow-400">
+                    <div class="text-4xl mb-4">🏆</div>
+                    <h3 class="text-xl font-bold mb-2">Vrhunski autoritet</h3>
+                    <p class="text-blue-100">Svi ga slušaju jer zrači znanjem i harizmom koju retko ko poseduje.</p>
+                </div>
+                <!-- Razlog 2 -->
+                <div class="bg-blue-800 p-8 rounded-xl shadow-lg border-b-4 border-yellow-400">
+                    <div class="text-4xl mb-4">⚽</div>
+                    <h3 class="text-xl font-bold mb-2">Majstor sporta</h3>
+                    <p class="text-blue-100">Svaku vežbu i svaki sport pokazuje sa neverovatnom lakoćom i preciznošću.</p>
+                </div>
+                <!-- Razlog 3 -->
+                <div class="bg-blue-800 p-8 rounded-xl shadow-lg border-b-4 border-yellow-400">
+                    <div class="text-4xl mb-4">⭐</div>
+                    <h3 class="text-xl font-bold mb-2">Ljudina</h3>
+                    <p class="text-blue-100">Uvek je tu da sasluša učenika, pruži savet i pomogne kad je najteže.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerija -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Momenti sa terena</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="h-64 rounded-lg overflow-hidden">
+                <img src="nikola_1.jpg" alt="Nikola slika 1" onerror="this.src='https://via.placeholder.com/600x400?text=nikola_1.jpg'" class="w-full h-full object-cover">
+            </div>
+            <div class="h-64 rounded-lg overflow-hidden">
+                <img src="nikola_3.jpg" alt="Nikola slika 3" onerror="this.src='https://via.placeholder.com/600x400?text=nikola_3.jpg'" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <p class="text-gray-400 mb-2">Sajt posvećen najboljem nastavniku fizičkog vaspitanja</p>
+        <p class="font-bold text-xl">Nikola Štikić - Ponos Batajnice</p>
+        <div class="mt-6 text-sm text-gray-500">
+            &copy; 2024 Fan stranica | Kreirano sa poštovanjem
+        </div>
+    </footer>
 
 </body>
 </html>
